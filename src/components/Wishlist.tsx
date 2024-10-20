@@ -9,14 +9,14 @@ const Wishlist = () => {
 
   // Load wishlist from localStorage when the component mounts
   useEffect(() => {
-    const savedWishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    const savedWishlist = JSON.parse(localStorage.getItem('wishlist') || "") || [];
     setWishlist(savedWishlist);
     setLoading(false);
   }, []);
 
   // Function to refresh the wishlist from localStorage
   const refreshWishlist = () => {
-    const updatedWishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    const updatedWishlist = JSON.parse(localStorage.getItem('wishlist') || "") || [];
     setWishlist(updatedWishlist);
   };
 
@@ -28,7 +28,7 @@ const Wishlist = () => {
         <LoadingSpinner />
       ) : wishlist.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {wishlist.map((book) => (
+          {wishlist.map((book:any) => (
             <BookCard
               key={book.id}
               book={book}
