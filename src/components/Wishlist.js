@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from 'react';
 import BookCard from './BookCard';
 import LoadingSpinner from './LoadingSpinner';
