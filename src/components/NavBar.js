@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav className="bg-blue-600 shadow-lg">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className='text-2xl font-bold text-white'>
-          Book Finder
+          Book List App
         </Link>
         <div className="space-x-4">
           <Link href="/" className="text-white hover:text-gray-300">

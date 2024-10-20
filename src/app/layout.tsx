@@ -33,7 +33,7 @@ export default function RootLayout({
           <NavBar />
           <main className="flex-1 container mx-auto px-4 py-8">{children}</main>
           <footer className="bg-gray-800 text-white text-center py-4">
-            <p>© 2024 Book List App. All rights reserved.</p>
+            <p>© 2024 Book List App by Eftakhar Jaman. All rights reserved.</p>
           </footer>
         </div>
       </body>
