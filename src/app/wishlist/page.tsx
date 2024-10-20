@@ -1,4 +1,5 @@
-import Wishlist from '@/components/wishlist'
+
+import Wishlist from '@/components/Wishlist'
 import React from 'react'
 
 const page = () => {
